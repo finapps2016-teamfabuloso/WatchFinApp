@@ -23,6 +23,15 @@
 		ACA3FC5B1C93AD5C00327A00 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC5A1C93AD5C00327A00 /* GlanceController.swift */; };
 		ACA3FC5D1C93AD5C00327A00 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC5C1C93AD5C00327A00 /* ComplicationController.swift */; };
 		ACA3FC5F1C93AD5C00327A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA3FC5E1C93AD5C00327A00 /* Assets.xcassets */; };
+		ACA3FC731C93C03500327A00 /* TinoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC721C93BBFA00327A00 /* TinoVC.swift */; };
+		ACA3FC751C93C1CE00327A00 /* WirelessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC741C93C1CE00327A00 /* WirelessVC.swift */; };
+		ACA3FC771C93C29500327A00 /* MovementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC761C93C29500327A00 /* MovementsVC.swift */; };
+		ACA3FC791C93C41500327A00 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC781C93C41500327A00 /* Moves.swift */; };
+		ACA3FC7A1C93C41500327A00 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC781C93C41500327A00 /* Moves.swift */; };
+		ACA3FC7C1C93C66300327A00 /* Moves.json in Resources */ = {isa = PBXBuildFile; fileRef = ACA3FC7B1C93C66300327A00 /* Moves.json */; };
+		ACA3FC7D1C93C66300327A00 /* Moves.json in Resources */ = {isa = PBXBuildFile; fileRef = ACA3FC7B1C93C66300327A00 /* Moves.json */; };
+		ACA3FC801C93C86800327A00 /* MoveRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC7E1C93C86800327A00 /* MoveRow.swift */; };
+		ACA3FC841C93DACE00327A00 /* ProductDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC811C93D4C300327A00 /* ProductDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +107,14 @@
 		ACA3FC5C1C93AD5C00327A00 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		ACA3FC5E1C93AD5C00327A00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA3FC601C93AD5C00327A00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA3FC711C93BBF900327A00 /* GlobalPaymentsWatchApp WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlobalPaymentsWatchApp WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		ACA3FC721C93BBFA00327A00 /* TinoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TinoVC.swift; path = "../GlobalPaymentsWatchApp WatchKit App/TinoVC.swift"; sourceTree = "<group>"; };
+		ACA3FC741C93C1CE00327A00 /* WirelessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WirelessVC.swift; sourceTree = "<group>"; };
+		ACA3FC761C93C29500327A00 /* MovementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementsVC.swift; sourceTree = "<group>"; };
+		ACA3FC781C93C41500327A00 /* Moves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moves.swift; sourceTree = "<group>"; };
+		ACA3FC7B1C93C66300327A00 /* Moves.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Moves.json; sourceTree = "<group>"; };
+		ACA3FC7E1C93C86800327A00 /* MoveRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveRow.swift; sourceTree = "<group>"; };
+		ACA3FC811C93D4C300327A00 /* ProductDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +192,7 @@
 				ACA3FC431C93AD5C00327A00 /* Interface.storyboard */,
 				ACA3FC461C93AD5C00327A00 /* Assets.xcassets */,
 				ACA3FC481C93AD5C00327A00 /* Info.plist */,
+				ACA3FC711C93BBF900327A00 /* GlobalPaymentsWatchApp WatchKit App-Bridging-Header.h */,
 			);
 			path = "GlobalPaymentsWatchApp WatchKit App";
 			sourceTree = "<group>";
@@ -187,6 +205,12 @@
 				ACA3FC581C93AD5C00327A00 /* NotificationController.swift */,
 				ACA3FC5A1C93AD5C00327A00 /* GlanceController.swift */,
 				ACA3FC5C1C93AD5C00327A00 /* ComplicationController.swift */,
+				ACA3FC721C93BBFA00327A00 /* TinoVC.swift */,
+				ACA3FC741C93C1CE00327A00 /* WirelessVC.swift */,
+				ACA3FC761C93C29500327A00 /* MovementsVC.swift */,
+				ACA3FC7E1C93C86800327A00 /* MoveRow.swift */,
+				ACA3FC781C93C41500327A00 /* Moves.swift */,
+				ACA3FC811C93D4C300327A00 /* ProductDetailsVC.swift */,
 				ACA3FC5E1C93AD5C00327A00 /* Assets.xcassets */,
 				ACA3FC601C93AD5C00327A00 /* Info.plist */,
 				ACA3FC521C93AD5C00327A00 /* Supporting Files */,
@@ -197,6 +221,7 @@
 		ACA3FC521C93AD5C00327A00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACA3FC7B1C93C66300327A00 /* Moves.json */,
 				ACA3FC531C93AD5C00327A00 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
@@ -327,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA3FC7C1C93C66300327A00 /* Moves.json in Resources */,
 				ACA3FC2F1C93AD5C00327A00 /* LaunchScreen.storyboard in Resources */,
 				ACA3FC2C1C93AD5C00327A00 /* Assets.xcassets in Resources */,
 				ACA3FC2A1C93AD5C00327A00 /* Main.storyboard in Resources */,
@@ -353,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA3FC7D1C93C66300327A00 /* Moves.json in Resources */,
 				ACA3FC5F1C93AD5C00327A00 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +393,7 @@
 			files = (
 				ACA3FC271C93AD5C00327A00 /* ViewController.swift in Sources */,
 				ACA3FC251C93AD5C00327A00 /* AppDelegate.swift in Sources */,
+				ACA3FC791C93C41500327A00 /* Moves.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,9 +410,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA3FC591C93AD5C00327A00 /* NotificationController.swift in Sources */,
+				ACA3FC801C93C86800327A00 /* MoveRow.swift in Sources */,
 				ACA3FC571C93AD5C00327A00 /* ExtensionDelegate.swift in Sources */,
+				ACA3FC731C93C03500327A00 /* TinoVC.swift in Sources */,
+				ACA3FC771C93C29500327A00 /* MovementsVC.swift in Sources */,
 				ACA3FC5D1C93AD5C00327A00 /* ComplicationController.swift in Sources */,
+				ACA3FC7A1C93C41500327A00 /* Moves.swift in Sources */,
 				ACA3FC551C93AD5C00327A00 /* InterfaceController.swift in Sources */,
+				ACA3FC841C93DACE00327A00 /* ProductDetailsVC.swift in Sources */,
+				ACA3FC751C93C1CE00327A00 /* WirelessVC.swift in Sources */,
 				ACA3FC5B1C93AD5C00327A00 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,13 +588,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = GlobalPaymentsWatchApp_WatchKit_Extension;
 				INFOPLIST_FILE = "GlobalPaymentsWatchApp WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GlobalPaymentsWatchApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GlobalPaymentsWatchApp WatchKit App/GlobalPaymentsWatchApp WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -570,13 +608,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = GlobalPaymentsWatchApp_WatchKit_Extension;
 				INFOPLIST_FILE = "GlobalPaymentsWatchApp WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GlobalPaymentsWatchApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GlobalPaymentsWatchApp WatchKit App/GlobalPaymentsWatchApp WatchKit App-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.1;
 			};
@@ -647,6 +688,7 @@
 				ACA3FC651C93AD5C00327A00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACA3FC671C93AD5C00327A00 /* Build configuration list for PBXNativeTarget "GlobalPaymentsWatchApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -655,6 +697,7 @@
 				ACA3FC691C93AD5C00327A00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACA3FC6B1C93AD5C00327A00 /* Build configuration list for PBXNativeTarget "GlobalPaymentsWatchApp" */ = {
 			isa = XCConfigurationList;
@@ -663,6 +706,7 @@
 				ACA3FC6D1C93AD5C00327A00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACA3FC6E1C93AD5C00327A00 /* Build configuration list for PBXNativeTarget "GlobalPaymentsWatchAppTests" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +715,7 @@
 				ACA3FC701C93AD5C00327A00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qxM-cd-LIn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GlobalPaymentsWatchApp_WatchKit_App" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="235" y="347"/>
-        </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
@@ -48,67 +41,123 @@
                     <items>
                         <imageView height="150" alignment="left" image="GPIcon" id="IOd-0I-CfK"/>
                     </items>
+                    <connections>
+                        <segue destination="rgt-Hm-ijo" kind="relationship" relationship="nextPage" id="tEf-s8-2EC"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="1298"/>
         </scene>
-        <!--Interface Controller-->
+        <!--TinoVC-->
         <scene sceneID="4ha-XT-6n1">
             <objects>
-                <controller id="rgt-Hm-ijo">
+                <controller id="rgt-Hm-ijo" customClass="TinoVC" customModule="GlobalPaymentsWatchApp_WatchKit_Extension">
                     <items>
-                        <group width="1" height="86" alignment="left" id="MjM-Mm-fhZ">
-                            <items>
-                                <button width="1" height="1" alignment="center" verticalAlignment="center" title="Button" id="p1O-y3-8rg"/>
-                            </items>
-                        </group>
+                        <button width="117" height="100" alignment="center" backgroundImage="TinoBrive2" id="p1O-y3-8rg">
+                            <connections>
+                                <action selector="actionShowWireless" destination="rgt-Hm-ijo" id="Y0L-QZ-s7R"/>
+                            </connections>
+                        </button>
                         <group width="1" height="59.5" alignment="left" contentMode="left" id="QWc-E2-aKT">
                             <items>
-                                <imageView width="50" height="1" alignment="left" image="Bitcoin" id="LMs-fC-zPc"/>
-                                <label width="80" height="1" alignment="right" verticalAlignment="center" text="Label" id="ZK9-NJ-2hu"/>
+                                <button alignment="center" verticalAlignment="center" backgroundImage="Bitcoin" id="Bt2-Ur-8m1">
+                                    <connections>
+                                        <action selector="actionShowMovements" destination="rgt-Hm-ijo" id="NQ6-a9-bLW"/>
+                                    </connections>
+                                </button>
+                                <label width="80" height="1" alignment="right" verticalAlignment="center" text="Label" id="ZK9-NJ-2hu">
+                                    <fontDescription key="font" type="system" pointSize="30"/>
+                                </label>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="bitcoinLabel" destination="ZK9-NJ-2hu" id="l76-XS-80G"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="481" y="1298"/>
+            <point key="canvasLocation" x="481" y="1297.25"/>
         </scene>
-        <!--Interface Controller-->
+        <!--WirelessVC-->
         <scene sceneID="w0N-8V-mkZ">
             <objects>
-                <controller id="tBx-qY-BVx">
+                <controller identifier="WirelessVC" id="tBx-qY-BVx" customClass="WirelessVC" customModule="GlobalPaymentsWatchApp_WatchKit_Extension">
                     <items>
-                        <group width="1" height="152" alignment="left" backgroundImage="wirelessRFC" id="XJD-Er-Oba">
-                            <items>
-                                <button width="133" height="153.5" alignment="left" title="1" id="BJY-mH-1dj"/>
-                            </items>
-                        </group>
+                        <button width="1" height="1" alignment="center" verticalAlignment="center" backgroundImage="wirelessRFC" id="BJY-mH-1dj">
+                            <connections>
+                                <action selector="actionShowProperties" destination="tBx-qY-BVx" id="dKn-uw-4ku"/>
+                                <segue destination="jtw-3J-Ei3" kind="modal" id="PQq-5P-MW1"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="698" y="1298.5"/>
         </scene>
-        <!--Interface Controller-->
+        <!--ProductDetailsVC-->
+        <scene sceneID="5oM-A7-aRc">
+            <objects>
+                <controller identifier="ProductDetailsVC" id="jtw-3J-Ei3" customClass="ProductDetailsVC" customModule="GlobalPaymentsWatchApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="NfQ-o9-ucd">
+                            <items>
+                                <imageView width="46" height="45" alignment="left" id="5XY-XF-xCG"/>
+                                <label width="86" height="1" alignment="left" text="Label" id="ihl-dv-6cW">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Mjw-n9-tNQ">
+                            <items>
+                                <imageView width="46" height="45" alignment="left" image="Bitcoin" id="5Lo-RD-FMh"/>
+                                <label width="86" height="1" alignment="left" text="Label" id="cVO-MQ-0hJ">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Buy" id="1Au-Gl-fdm">
+                            <fontDescription key="font" type="system" pointSize="36"/>
+                            <connections>
+                                <action selector="actionBuy" destination="jtw-3J-Ei3" id="NmS-aa-jHR"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="imageLbl" destination="5XY-XF-xCG" id="taX-Oj-HD0"/>
+                        <outlet property="nameLbl" destination="ihl-dv-6cW" id="aDA-wI-R4E"/>
+                        <outlet property="priceLbl" destination="cVO-MQ-0hJ" id="CEJ-gu-hJl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="920" y="1295"/>
+        </scene>
+        <!--MovementsVC-->
         <scene sceneID="v9R-Nq-uy8">
             <objects>
-                <controller id="ESs-ds-KFj">
+                <controller identifier="MovementsVC" id="ESs-ds-KFj" customClass="MovementsVC" customModule="GlobalPaymentsWatchApp_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="9XC-jM-KS6">
                             <items>
-                                <tableRow id="xq0-IM-5ck">
+                                <tableRow identifier="MovesRow" id="xq0-IM-5ck" customClass="MovesRow" customModule="GlobalPaymentsWatchApp">
                                     <group key="rootItem" width="1" alignment="left" id="OX0-mR-UeT">
                                         <items>
-                                            <label width="64" height="1" alignment="left" text="Label" id="vjO-bj-t9d"/>
-                                            <imageView width="60" alignment="left" id="Dlk-vw-qHN"/>
+                                            <label width="65" height="1" alignment="left" verticalAlignment="center" text="Label" id="vjO-bj-t9d"/>
+                                            <label height="1" alignment="right" verticalAlignment="center" text="Label" id="f2c-eP-qyn"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="vjO-bj-t9d" id="bIo-Oe-shB"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="oprTable" destination="9XC-jM-KS6" id="pVS-fl-gYa"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="934" y="1298"/>
+            <point key="canvasLocation" x="698" y="1534"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">

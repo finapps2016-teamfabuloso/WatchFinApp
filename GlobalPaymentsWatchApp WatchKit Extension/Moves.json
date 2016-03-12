@@ -1,0 +1,37 @@
+[
+  {
+    "name": "ABA",
+    "price": "SFO",
+    "id": "AA100",
+    "date": "no",
+    "gate": "1A"
+  },
+  {
+    "name": "ABA",
+    "price": "JFK",
+    "id": "AA101",
+    "date": "yes",
+    "gate": "1B"
+  },
+  {
+    "name": "ABA",
+    "price": "LAS",
+    "id": "AA102",
+    "date": "no",
+    "gate": "1C"
+  },
+  {
+    "name": "ABA",
+    "price": "IAD",
+    "id": "AA103",
+    "date": "no",
+    "gate": "1D"
+  },
+  {
+    "name": "ABA",
+    "price": "BCN",
+    "id": "AA104",
+    "date": "no",
+    "gate": "2A"
+  },
+]
