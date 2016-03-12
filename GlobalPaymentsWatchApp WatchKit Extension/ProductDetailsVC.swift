@@ -15,16 +15,31 @@ class ProductDetailsVC: WKInterfaceController
     @IBOutlet var imageLbl: WKInterfaceImage!
     @IBOutlet var priceLbl: WKInterfaceLabel!
     
+    var shouldDismiss = false;
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        nameLbl.setText("Texto")
-        imageLbl.setImage(UIImage(named: "Bitcoin"))
-        priceLbl.setText("150")
+        nameLbl.setText("GP Journal")
+//        imageLbl.setImage(UIImage(named: "Bitcoin"))
+        priceLbl.setText("10")
+    }
+    
+    override func didAppear() {
+        NSLog("Did appear")
+        if (shouldDismiss)
+        {
+            self.dismissController()
+        }
+        else
+        {
+            shouldDismiss = true
+        }
+        
     }
     
     @IBAction func actionBuy()
     {
-        pushControllerWithName("MovementsVC", context: nil)
+        
     }
 }
 

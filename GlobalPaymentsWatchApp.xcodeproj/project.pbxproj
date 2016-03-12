@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1AACA71C947C7A007EF6F9 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1AACA61C947C7A007EF6F9 /* AuthorizationVC.swift */; };
 		ACA3FC251C93AD5C00327A00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC241C93AD5C00327A00 /* AppDelegate.swift */; };
 		ACA3FC271C93AD5C00327A00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3FC261C93AD5C00327A00 /* ViewController.swift */; };
 		ACA3FC2A1C93AD5C00327A00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA3FC281C93AD5C00327A00 /* Main.storyboard */; };
@@ -84,6 +85,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC1AACA61C947C7A007EF6F9 /* AuthorizationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
 		ACA3FC211C93AD5C00327A00 /* GlobalPaymentsWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalPaymentsWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA3FC241C93AD5C00327A00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA3FC261C93AD5C00327A00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				ACA3FC7E1C93C86800327A00 /* MoveRow.swift */,
 				ACA3FC781C93C41500327A00 /* Moves.swift */,
 				ACA3FC811C93D4C300327A00 /* ProductDetailsVC.swift */,
+				AC1AACA61C947C7A007EF6F9 /* AuthorizationVC.swift */,
 				ACA3FC5E1C93AD5C00327A00 /* Assets.xcassets */,
 				ACA3FC601C93AD5C00327A00 /* Info.plist */,
 				ACA3FC521C93AD5C00327A00 /* Supporting Files */,
@@ -313,6 +316,7 @@
 				TargetAttributes = {
 					ACA3FC201C93AD5C00327A00 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = PZKR35D4TE;
 					};
 					ACA3FC341C93AD5C00327A00 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -320,9 +324,11 @@
 					};
 					ACA3FC3D1C93AD5C00327A00 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = PZKR35D4TE;
 					};
 					ACA3FC4C1C93AD5C00327A00 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = PZKR35D4TE;
 					};
 				};
 			};
@@ -411,6 +417,7 @@
 			files = (
 				ACA3FC591C93AD5C00327A00 /* NotificationController.swift in Sources */,
 				ACA3FC801C93C86800327A00 /* MoveRow.swift in Sources */,
+				AC1AACA71C947C7A007EF6F9 /* AuthorizationVC.swift in Sources */,
 				ACA3FC571C93AD5C00327A00 /* ExtensionDelegate.swift in Sources */,
 				ACA3FC731C93C03500327A00 /* TinoVC.swift in Sources */,
 				ACA3FC771C93C29500327A00 /* MovementsVC.swift in Sources */,
@@ -558,10 +565,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GlobalPaymentsWatchApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GlobalPaymentsWatchApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -573,10 +583,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GlobalPaymentsWatchApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GlobalPaymentsWatchApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -589,6 +602,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = GlobalPaymentsWatchApp_WatchKit_Extension;
 				INFOPLIST_FILE = "GlobalPaymentsWatchApp WatchKit App/Info.plist";
@@ -609,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = GlobalPaymentsWatchApp_WatchKit_Extension;
 				INFOPLIST_FILE = "GlobalPaymentsWatchApp WatchKit App/Info.plist";
@@ -627,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GlobalPaymentsWatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GlobalPaymentsWatchApp;
@@ -638,6 +654,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GlobalPaymentsWatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gp.GlobalPaymentsWatchApp;

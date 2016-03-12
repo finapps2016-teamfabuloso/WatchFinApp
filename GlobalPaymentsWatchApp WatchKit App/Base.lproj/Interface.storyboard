@@ -53,11 +53,7 @@
             <objects>
                 <controller id="rgt-Hm-ijo" customClass="TinoVC" customModule="GlobalPaymentsWatchApp_WatchKit_Extension">
                     <items>
-                        <button width="117" height="100" alignment="center" backgroundImage="TinoBrive2" id="p1O-y3-8rg">
-                            <connections>
-                                <action selector="actionShowWireless" destination="rgt-Hm-ijo" id="Y0L-QZ-s7R"/>
-                            </connections>
-                        </button>
+                        <button width="117" height="100" alignment="center" backgroundImage="TinoBrive2" id="p1O-y3-8rg"/>
                         <group width="1" height="59.5" alignment="left" contentMode="left" id="QWc-E2-aKT">
                             <items>
                                 <button alignment="center" verticalAlignment="center" backgroundImage="Bitcoin" id="Bt2-Ur-8m1">
@@ -73,6 +69,7 @@
                     </items>
                     <connections>
                         <outlet property="bitcoinLabel" destination="ZK9-NJ-2hu" id="l76-XS-80G"/>
+                        <segue destination="tBx-qY-BVx" kind="relationship" relationship="nextPage" id="3Br-o7-zUD"/>
                     </connections>
                 </controller>
             </objects>
@@ -99,18 +96,18 @@
             <objects>
                 <controller identifier="ProductDetailsVC" id="jtw-3J-Ei3" customClass="ProductDetailsVC" customModule="GlobalPaymentsWatchApp_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" id="NfQ-o9-ucd">
+                        <group width="1" height="48" alignment="left" id="NfQ-o9-ucd">
                             <items>
-                                <imageView width="46" height="45" alignment="left" id="5XY-XF-xCG"/>
-                                <label width="86" height="1" alignment="left" text="Label" id="ihl-dv-6cW">
-                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                <imageView width="46" height="45" alignment="left" verticalAlignment="center" image="productToSell" id="WC0-kr-yQh"/>
+                                <label width="86" height="1" alignment="right" text="Label" textAlignment="center" id="ihl-dv-6cW">
+                                    <fontDescription key="font" type="system" pointSize="15"/>
                                 </label>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="Mjw-n9-tNQ">
                             <items>
                                 <imageView width="46" height="45" alignment="left" image="Bitcoin" id="5Lo-RD-FMh"/>
-                                <label width="86" height="1" alignment="left" text="Label" id="cVO-MQ-0hJ">
+                                <label width="86" height="1" alignment="left" text="Label" textAlignment="center" id="cVO-MQ-0hJ">
                                     <fontDescription key="font" type="system" pointSize="20"/>
                                 </label>
                             </items>
@@ -119,11 +116,11 @@
                             <fontDescription key="font" type="system" pointSize="36"/>
                             <connections>
                                 <action selector="actionBuy" destination="jtw-3J-Ei3" id="NmS-aa-jHR"/>
+                                <segue destination="J5g-Hi-oA3" kind="modal" id="VYB-Ee-WEW"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="imageLbl" destination="5XY-XF-xCG" id="taX-Oj-HD0"/>
                         <outlet property="nameLbl" destination="ihl-dv-6cW" id="aDA-wI-R4E"/>
                         <outlet property="priceLbl" destination="cVO-MQ-0hJ" id="CEJ-gu-hJl"/>
                     </connections>
@@ -157,7 +154,24 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="698" y="1534"/>
+            <point key="canvasLocation" x="481" y="1546"/>
+        </scene>
+        <!--AuthorizationVC-->
+        <scene sceneID="ZCI-eM-KFT">
+            <objects>
+                <controller identifier="AuthorizationVC" id="J5g-Hi-oA3" customClass="AuthorizationVC" customModule="GlobalPaymentsWatchApp_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="39.5" alignment="left" text="Authorizing" textAlignment="center" id="5ed-08-lWG">
+                            <fontDescription key="font" type="system" pointSize="25"/>
+                        </label>
+                        <group width="1" height="105" alignment="center" verticalAlignment="center" id="qJk-bb-5bF"/>
+                    </items>
+                    <connections>
+                        <outlet property="backgroundGroup" destination="qJk-bb-5bF" id="Yhk-MB-erb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="920" y="1570"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
