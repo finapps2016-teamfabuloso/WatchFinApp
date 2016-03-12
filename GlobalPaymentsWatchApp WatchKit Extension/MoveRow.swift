@@ -9,7 +9,7 @@
 import Foundation
 import WatchKit
 
-class MovesRow: NSObject {
+class MoveRow: NSObject {
     
     @IBOutlet var nameLabel: WKInterfaceLabel!
     @IBOutlet var priceLabel: WKInterfaceLabel!

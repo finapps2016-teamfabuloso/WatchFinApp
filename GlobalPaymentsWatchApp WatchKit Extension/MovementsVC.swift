@@ -17,10 +17,10 @@ class MovementsVC: WKInterfaceController
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        oprTable.setNumberOfRows(moves.count, withRowType: "MovesRow")
+        oprTable.setNumberOfRows(moves.count, withRowType: "MoveRow")
         
         for index in 0..<oprTable.numberOfRows {
-            if let controller = oprTable.rowControllerAtIndex(index) as? MovesRow {
+            if let controller = oprTable.rowControllerAtIndex(index) as? MoveRow {
                 controller.moves = moves[index]
             }
         }

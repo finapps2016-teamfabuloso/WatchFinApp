@@ -53,7 +53,7 @@
             <objects>
                 <controller id="rgt-Hm-ijo" customClass="TinoVC" customModule="GlobalPaymentsWatchApp_WatchKit_Extension">
                     <items>
-                        <button width="117" height="100" alignment="center" backgroundImage="TinoBrive2" id="p1O-y3-8rg"/>
+                        <imageView height="92" alignment="left" image="TinoBrive2" id="lRZ-KS-9Gk"/>
                         <group width="1" height="59.5" alignment="left" contentMode="left" id="QWc-E2-aKT">
                             <items>
                                 <button alignment="center" verticalAlignment="center" backgroundImage="Bitcoin" id="Bt2-Ur-8m1">
@@ -73,7 +73,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="481" y="1297.25"/>
+            <point key="canvasLocation" x="481" y="1299.25"/>
         </scene>
         <!--WirelessVC-->
         <scene sceneID="w0N-8V-mkZ">
@@ -135,7 +135,7 @@
                     <items>
                         <table alignment="left" id="9XC-jM-KS6">
                             <items>
-                                <tableRow identifier="MovesRow" id="xq0-IM-5ck" customClass="MovesRow" customModule="GlobalPaymentsWatchApp">
+                                <tableRow identifier="MoveRow" selectable="NO" id="xq0-IM-5ck" customClass="MoveRow" customModule="GlobalPaymentsWatchApp_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="OX0-mR-UeT">
                                         <items>
                                             <label width="65" height="1" alignment="left" verticalAlignment="center" text="Label" id="vjO-bj-t9d"/>
@@ -144,6 +144,7 @@
                                     </group>
                                     <connections>
                                         <outlet property="nameLabel" destination="vjO-bj-t9d" id="bIo-Oe-shB"/>
+                                        <outlet property="priceLabel" destination="f2c-eP-qyn" id="tlb-Cb-mZ3"/>
                                     </connections>
                                 </tableRow>
                             </items>

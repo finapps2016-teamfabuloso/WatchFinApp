@@ -1,37 +1,32 @@
 [
   {
-    "name": "ABA",
-    "price": "SFO",
+    "name": "iPhone",
+    "price": "600",
     "id": "AA100",
     "date": "no",
-    "gate": "1A"
   },
   {
-    "name": "ABA",
-    "price": "JFK",
+    "name": "Groceries",
+    "price": "40",
     "id": "AA101",
     "date": "yes",
-    "gate": "1B"
   },
   {
-    "name": "ABA",
-    "price": "LAS",
+    "name": "Flight",
+    "price": "200",
     "id": "AA102",
     "date": "no",
-    "gate": "1C"
   },
   {
-    "name": "ABA",
-    "price": "IAD",
+    "name": "Book",
+    "price": "30",
     "id": "AA103",
     "date": "no",
-    "gate": "1D"
   },
   {
-    "name": "ABA",
-    "price": "BCN",
+    "name": "Figure",
+    "price": "10",
     "id": "AA104",
     "date": "no",
-    "gate": "2A"
   },
 ]
